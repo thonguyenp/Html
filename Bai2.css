@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+.container {
+    width: 450px;
+    min-height: 300px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+
+label {
+    width: 100%;
+    line-height: 40px;
+
+}
+
+input[type="text"],input[type="password"] {
+    width: 100%;
+    padding: 7px 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    padding: 6px 10px;
+    background-color: aquamarine;
+}
+
+.container::after{
+    content: "FORM DANG KY";
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    color: red;
+    font-weight: bold;
+    
+}
